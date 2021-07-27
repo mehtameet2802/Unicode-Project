@@ -12,19 +12,12 @@ Data for few books and students has been already coded by me which includes
 Book data
 
 1) Book Name - Physics, Book Id - 1
-
 2) Book Name - Chemistry, Book Id - 2
-
 3) Book Name - Maths, Book Id - 3
-
 4) Book Name - Bio, Book Id - 4
-
 5) Book Name - Computer Programming, Book Id - 5
-
 6) Book Name - Java, Book Id - 6
-
 7) Book Name - Python, Book Id - 7
-
 8) Book Name - Machine Learning, Book Id - 8
 
 Student data
