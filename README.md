@@ -26,6 +26,6 @@ Student data
 2) Student name B , Student id 21
 3) Student name C , Student id 22
 
-Task 2,3,4 folder has files for a multiscreen app called Contactz, it has been developed by me in java and allows user to save name,number,email id and birthdate of any person by clicking on save button.User can use clear button to clear the inout fields. The app allows the user to view all the saved contacts by clicking on all contacts button and details of the contact can be seen by clicking on the info icon, calls can be made and messages can be sent to the respective person by clicking on call and message icon.
+Task 2,3,4 folder has files for a multiscreen app called Contactz, it has been developed by me in java and allows user to save name,number,email id and birthdate of any person by clicking on save button. User can use clear button to clear the input fields. The app allows the user to view all the saved contacts by clicking on all contacts button and details of the contact can be seen by clicking on the info icon, calls can be made and messages can be sent to the respective person by clicking on call and message icon.
 
 For all the tasks I have taken help from youtube and stack overflow and also did a small guided project.
