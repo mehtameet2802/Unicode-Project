@@ -10,20 +10,28 @@ Login password is - init@123
 Data for few books and students has been already coded by me which includes
 
 Book data
-1 Book Name - Physics, Book Id - 1
 
-2 Book Name - Chemistry, Book Id - 2
-3 Book Name - Maths, Book Id - 3
-4 Book Name - Bio, Book Id - 4
-5 Book Name - Computer Programming, Book Id - 5
-6 Book Name - Java, Book Id - 6
-7 Book Name - Python, Book Id - 7
-8 Book Name - Machine Learning, Book Id - 8
+1) Book Name - Physics, Book Id - 1
+
+2) Book Name - Chemistry, Book Id - 2
+
+3) Book Name - Maths, Book Id - 3
+
+4) Book Name - Bio, Book Id - 4
+
+5) Book Name - Computer Programming, Book Id - 5
+
+6) Book Name - Java, Book Id - 6
+
+7) Book Name - Python, Book Id - 7
+
+8) Book Name - Machine Learning, Book Id - 8
 
 Student data
-1 Student name A , Student id 20
-2 Student name B , Student id 21
-3 Student name C , Student id 22
+
+1) Student name A , Student id 20
+2) Student name B , Student id 21
+3) Student name C , Student id 22
 
 Task 2,3,4 folder has files for a multiscreen app called Contactz, it has been developed by me in java and allows user to save name,number,email id and birthdate of any person by clicking on save button.User can use clear button to clear the inout fields. The app allows the user to view all the saved contacts by clicking on all contacts button and details of the contact can be seen by clicking on the info icon, calls can be made and messages can be sent to the respective person by clicking on call and message icon.
 
