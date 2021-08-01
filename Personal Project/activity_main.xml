@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/baseamounttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:padding="5dp"
+        android:text=" Base Amount "
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/baseamount"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="44dp"
+        android:hint="Enter Amount"
+        android:inputType="numberDecimal"
+        android:padding="5dp"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.383"
+        app:layout_constraintStart_toEndOf="@+id/baseamounttext"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/gstpercenttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:text="GST Percentage"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/baseamounttext"
+        app:layout_constraintTop_toBottomOf="@+id/baseamounttext" />
+
+    <Button
+        android:id="@+id/per12centbtn"
+        android:layout_width="45dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="24dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:paddingLeft="0dp"
+        android:paddingTop="4dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="4dp"
+        android:text="12%"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:backgroundTint="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/per5centbtn"
+        app:layout_constraintTop_toBottomOf="@+id/baseamounttext" />
+
+    <Button
+        android:id="@+id/per5centbtn"
+        android:layout_width="41dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="24dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:paddingLeft="1dp"
+        android:paddingTop="4dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="4dp"
+        android:text="5%"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:backgroundTint="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/gstpercenttext"
+        app:layout_constraintTop_toBottomOf="@+id/baseamounttext" />
+
+    <Button
+        android:id="@+id/percent18btn"
+        android:layout_width="47dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="24dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:paddingLeft="4dp"
+        android:paddingRight="9dp"
+        android:text="18%"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/per12centbtn"
+        app:layout_constraintTop_toBottomOf="@+id/baseamounttext" />
+
+    <Button
+        android:id="@+id/percent28btn"
+        android:layout_width="57dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="24dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:paddingLeft="0dp"
+        android:paddingTop="4dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="4dp"
+        android:text="28%"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/percent18btn"
+        app:layout_constraintTop_toBottomOf="@+id/baseamounttext" />
+
+    <TextView
+        android:id="@+id/cgstamount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="36dp"
+        android:padding="10dp"
+        android:text="CGST Amount:"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/gstpercenttext"
+        app:layout_constraintTop_toBottomOf="@+id/addgstbtn" />
+
+    <TextView
+        android:id="@+id/sgsttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:padding="10dp"
+        android:text="SGST Amount:"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/cgstamount"
+        app:layout_constraintTop_toBottomOf="@+id/cgstamount" />
+
+    <Button
+        android:id="@+id/addgstbtn"
+        android:layout_width="115dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="80dp"
+        android:text="GST+"
+        app:backgroundTint="#673AB7"
+        app:layout_constraintStart_toStartOf="@+id/gstpercenttext"
+        app:layout_constraintTop_toBottomOf="@+id/gstpercenttext" />
+
+    <Button
+        android:id="@+id/subgstbtn"
+        android:layout_width="115dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="80dp"
+        android:text="GST-"
+        app:backgroundTint="#673AB7"
+        app:layout_constraintStart_toEndOf="@+id/addgstbtn"
+        app:layout_constraintTop_toBottomOf="@+id/gstpercenttext" />
+
+    <TextView
+        android:id="@+id/cgstamountview"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="47dp"
+        android:text="5000"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:layout_constraintStart_toEndOf="@+id/cgstamount"
+        app:layout_constraintTop_toBottomOf="@+id/addgstbtn" />
+
+    <TextView
+        android:id="@+id/sgstamountview"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="34dp"
+        android:text="5000"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:layout_constraintStart_toEndOf="@+id/sgsttext"
+        app:layout_constraintTop_toBottomOf="@+id/cgstamountview" />
+
+    <TextView
+        android:id="@+id/gstappliedview"
+        android:layout_width="48dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="24dp"
+        android:text="28%"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/gstapplied"
+        app:layout_constraintTop_toBottomOf="@+id/gstpercenttext" />
+
+    <TextView
+        android:id="@+id/gstapplied"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginLeft="104dp"
+        android:layout_marginTop="24dp"
+        android:text="GST Applied"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gstpercenttext" />
+
+    <TextView
+        android:id="@+id/gstnet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="16dp"
+        android:padding="10dp"
+        android:text="Net Amount:"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sgsttext" />
+
+    <TextView
+        android:id="@+id/netamountview"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="38dp"
+        android:text="10000"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:layout_constraintStart_toEndOf="@+id/gstnet"
+        app:layout_constraintTop_toBottomOf="@+id/sgstamountview" />
+
+    <TextView
+        android:id="@+id/finalamount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="16dp"
+        android:padding="10dp"
+        android:text="Total Amount:"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gstnet" />
+
+    <TextView
+        android:id="@+id/finalamountview"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="37.5dp"
+        android:text="15000"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:layout_constraintStart_toEndOf="@+id/finalamount"
+        app:layout_constraintTop_toBottomOf="@+id/netamountview" />
+
+    <Button
+        android:id="@+id/savebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Save/Share"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.829"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/finalamount" />
+
+    <Button
+        android:id="@+id/clearbtn"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Clear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.168"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/finalamount" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
