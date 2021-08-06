@@ -79,9 +79,14 @@ public class MainActivity extends AppCompatActivity {
                 {
                     Toast.makeText(MainActivity.this, "Enter Name", Toast.LENGTH_SHORT).show();
                 }
+                else if(number1.length()>13 || number1.length()<10)
+                {
+                    number.setText("");
+                    Toast.makeText(MainActivity.this, "Re-enter Phone number", Toast.LENGTH_SHORT).show();
+                }
                 else if(number1.isEmpty())
                 {
-                    Toast.makeText(MainActivity.this, "Enter number", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Re-enter number", Toast.LENGTH_SHORT).show();
                 }
                 else
                     {
